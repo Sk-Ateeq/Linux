@@ -1,0 +1,41 @@
+In first day we learn and practise about some basic commands like:
+
+1. 'ls' --> It list out file and folders in a directory.
+2. 'whoami' --> It shows current user.
+3. 'pwd' --> Present working directory
+4. 'cd' --> Change directory
+5. 'touch' --> To create a file.
+6. 'mkdir' --> To create a directory.
+7. 'rm' --> To remove files or Directory.
+8. 'Clear' --> To clear our screen
+9. 'History' --> Its shows history of our commands.
+10. 'Sudo su-' --> To enter into root user.
+11. 'Exit' --> Exit from root user.
+12. 'rf*' --> recersively and forcefully and * means all
+13. 'Sudo su- username' --> To change user.
+14. Permissions:- (example)
+ 
+ubuntu@ip-172-31-8-10:~/Linux$ ls -l
+total 8
+-rw-rw-r-- 1 ubuntu ubuntu 641 Feb 11 16:49 Day-1
+-rw-rw-r-- 1 ubuntu ubuntu  31 Feb 11 16:31 README.md
+
+Here,
+    first '-' indicates prefix if its empty that means it represent file,
+    'd' represents its a directory.
+    'r' means read permissions.
+    'w' means write permissions.
+    'x' means excute permissions.
+
+-(prefix) rw- (user permissions) rw- (group permissions) r-- (other permisssions) 1 ubuntu (file user) ubuntu (file group) 641 Feb 11 (date) 16:49 (time) Day-1 (filename)
+
+Octal Represtation:-
+                  'X' - 2 power 0 = 1 than X = 1,
+                  'W' - 2 power 1 = 2 than W = 2,
+                  'R' - 2 power 2 = 4 than R = 4
+
+ 
+15.chmod --> to change modifications (permissions)
+To give full permissions to user, group and others --> 1+2+4 = 7, chmod 777 filename
+To give full permissions only for user and not any permissions to group and others, chmod 700 filename
+
